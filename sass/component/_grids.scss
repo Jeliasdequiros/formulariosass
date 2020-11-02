@@ -2,3 +2,15 @@
 /* GRIDS */
 /* **************************** */
 
+#container{
+    height: 100vh;
+    display:grid;
+    grid-template: {
+        columns: 10% 1fr 10%;
+        rows: 300px 1fr;
+    } 
+}
+
+.main{
+    
+}
