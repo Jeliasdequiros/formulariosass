@@ -4,13 +4,44 @@
 
 #container{
     height: 100vh;
+    background-color:$colorfondo;
     display:grid;
     grid-template: {
         columns: 10% 1fr 10%;
-        rows: 300px 1fr;
+        rows: 200px 1fr;
     } 
+   
 }
 
-.main{
+header{
     
+    background-color:$colorparticipa;
+   grid-column: 2/3; 
+   grid-row:1/2;
+   align-items: center;
+   justify-items: center;
+   display:grid;
+   grid-template: {
+       columns: 1fr 1fr;        
+    } 
+
+   .header__section--sorteonavidad{
+       font-size: map-get($fuentes,big);
+       background-color:$colorsorteo;
+   }
+    .header__section--imagen{
+        grid-column: 2/3;
+        grid-row: 1/2;
 }
+
+
+}
+
+
+main{
+    grid-column: 2/3;
+    grid-row:2/3;
+    background-color:$colorgracias;
+    align-items: center;
+}
+

@@ -537,9 +537,37 @@ noscript {
 /* **************************** */
 #container {
   height: 100vh;
+  background-color: #639D54;
   display: grid;
   grid-template-columns: 10% 1fr 10%;
-  grid-template-rows: 300px 1fr;
+  grid-template-rows: 200px 1fr;
+}
+
+header {
+  background-color: #E54B4B;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header .header__section--sorteonavidad {
+  font-size: 36px;
+  background-color: #E2C970;
+}
+
+header .header__section--imagen {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #E2C970;
+  align-items: center;
 }
 
 /* **************************** */
